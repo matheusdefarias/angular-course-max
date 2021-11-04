@@ -1,0 +1,17 @@
+# Important concepts learned and notes
+
+- How an Angular App gets Loaded and Started
+- What is a component
+- How to create a component(manually and using CLI)
+- AppModule
+- Component declaration
+- Working with component templates and styles
+- What is Databinding
+    - Output data
+        - String interpolation -> {{ data }}
+        - Property binding -> [property] = "data"
+    - React to (User) Events
+        - Event binding -> (event) = "expression"
+    - Combination of both
+        - Two-way-binding -> [(ngModel)] = "data"
+- A component's constructor is a method that is executed at the time the component is created by Angular.
