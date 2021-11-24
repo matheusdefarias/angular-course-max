@@ -1,0 +1,26 @@
+<label>Username</label>
+<input 
+  type="text"
+  class="form-control"
+  [(ngModel)]="userName"
+  ng-change=changeAllowResetValue()
+/>
+
+<p>{{ userName }}</p>
+
+<!-- When the button is clicked, the onResetUsername method is called and then the userName is set to empty string -->
+<button
+  class="btn btn-primary"
+  [disabled]="userName === ''"
+  (click)="onResetUsername($event)"
+>Reset Username method 1</button>
+
+<br>
+<br>
+
+<!-- When the button is clicked, userName is set to empty string -->
+<button
+  class="btn btn-primary"
+  [disabled]="userName === ''"
+  (click)="userName = ''"
+>Reset Username method 2</button>
