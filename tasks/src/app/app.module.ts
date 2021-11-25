@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { WarningAlertComponent } from './Task-1/warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './Task-1/success-alert/success-alert.component';
 import { TaskComponent } from './Task-2/task/task.component';
+import { Task3Component } from './Task-3/task3/task3.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WarningAlertComponent,
     SuccessAlertComponent,
-    TaskComponent
+    TaskComponent,
+    Task3Component
   ],
   imports: [
     BrowserModule,
