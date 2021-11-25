@@ -26,4 +26,5 @@
 - *ngIf directive -> is a structural directive because can add or remove elements from DOM (classes number 38 and 39)
 - ngStyle -> is an attribute directive because change only the element that the directive was used -> must use property binding (class number 40)
 - ngClass -> is an attribute directive because change only the element that the directive was used -> must use property binding  (class number 41)
-- ngFor ->
+- *ngFor -> is a structural directive because can add or remove elements from DOM (class number 42)
+- *ngFor and index (class number 44)
