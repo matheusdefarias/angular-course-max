@@ -5,16 +5,18 @@
 <br />
 <br />
 
+<!-- <p *ngIf="displayContent">Secret Password = tuna</p> -->
 <p *ngIf="displayContent; else noDisplayContent">Secret Password = tuna</p>
 
 <div
   *ngFor="let click of buttonClicks; let i = index"
-  [ngStyle]="{ backgroundColor: '#5096ff' }"
-  [ngClass]="{ textColor: i > 4 }"
+  [ngStyle]="{ backgroundColor: i >= 4 ? '#5096ff' : transparent }"
+  [ngClass]="{ 'white-text': i >= 4 }"
 >
-  <p *ngIf="i > 4; else noDisplayContent">
+  <!-- <p *ngIf=" i >= 5; else noDisplayContent">
     {{ i }}: {{ click.event }}-> x: {{ click.x }} | y: {{ click.y }}
-  </p>
+  </p> -->
+  {{ i }}: {{ click.event }}-> x: {{ click.x }} | y: {{ click.y }} | date: {{ click.date }}
 </div>
 
 <ng-template #noDisplayContent>

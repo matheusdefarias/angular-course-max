@@ -14,7 +14,8 @@ export class Task3Component implements OnInit {
   clickCoordinates: {
     event:string,
     x:number, 
-    y:number
+    y:number,
+    date:Date
   };
 
   constructor() { }
@@ -27,7 +28,8 @@ export class Task3Component implements OnInit {
     this.clickCoordinates = {
       event: "Click number " + (this.clickNumber + 1),
       x: event.clientX,
-      y: event.clientY
+      y: event.clientY,
+      date: new Date
     }
 
     this.buttonClicks.push(this.clickCoordinates);
